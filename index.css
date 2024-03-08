@@ -8,3 +8,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.info-text {
+    color: white !important;
+    font-weight: bolder !important;
+    font-size: 30px !important;
+    padding: 10px !important;
+    background-color: black !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

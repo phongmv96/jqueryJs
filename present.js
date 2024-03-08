@@ -1,7 +1,4 @@
 
-// Cần hỗ trợ hãy liên hệ: 
-// Mr-Nam http://facebook.com/nam.nodemy
-// Các bạn muốn học lập trình thì tham gia Nhóm zalo tự học lập trình nhé: https://zalo.me/g/yhdkef092
 
 var to = nameGirl;
 var gift_url = giftUrl;
@@ -18,16 +15,16 @@ function init() {
   document.querySelector('#card .content-card').innerHTML = `${contentCard}`;
   document.querySelector('#card .honey').setAttribute('src', `${giftImage}`);
 
-  var _giftLink, 
+  var _giftLink,
       _giftImg;
-  
+
   if (gift_url) {
     _giftLink = document.createElement("a");
     _giftLink.href = gift_url;
     _giftLink.target = "_blank";
     presentImage.appendChild(_giftLink);
   }
-  
+
   if (gift_image_url) {
     _giftImg = document.createElement("img");
     _giftImg.src = gift_image_url;
@@ -37,14 +34,14 @@ function init() {
       presentImage.appendChild(_giftImg);
     }
   }
-    
+
   present.addEventListener("click", function(e){
     present.classList.toggle("open");
     document.getElementById('card').classList.add('card-show');
   }, false);
-  
-  
-  
+
+
+
   nametag.innerText = to;
 }
 
